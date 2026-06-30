@@ -161,3 +161,66 @@ font-size:40px;
 }
 
 }
+/* Hero Image */
+.hero-image img{
+    width:320px;
+    border-radius:20px;
+    box-shadow:0 0 35px #7CFC00;
+    transition:.4s;
+}
+
+.hero-image img:hover{
+    transform:scale(1.05);
+}
+
+/* Service Card Hover */
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #7CFC00;
+}
+
+/* Button Hover */
+.btn:hover{
+    background:#fff;
+    color:#111;
+    box-shadow:0 0 20px #7CFC00;
+}
+
+/* Section Animation */
+section{
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+.hero-image img{
+width:260px;
+margin-top:30px;
+}
+
+nav{
+display:none;
+}
+
+}
