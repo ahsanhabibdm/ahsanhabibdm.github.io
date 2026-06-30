@@ -257,3 +257,13 @@ height:35px;
     font-weight:600;
 }
 
+.card img{
+    width:40px;
+    height:40px;
+    object-fit:contain;
+}
+
+.card span{
+    font-size:18px;
+    font-weight:600;
+}
