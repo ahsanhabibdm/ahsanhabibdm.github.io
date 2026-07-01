@@ -426,4 +426,24 @@ height:35px;
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+/* হেডার লোগো এবং ছবির স্টাইল */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* ছবি এবং টেক্সটের মাঝখানের দূরত্ব */
+}
+
+.nav-profile-img {
+    width: 35px; /* ছবির সাইজ ছোট রাখার জন্য */
+    height: 35px;
+    border-radius: 50%; /* ছবিটিকে গোল করার জন্য */
+    object-fit: cover; /* ছবি যেন কেটে বা চ্যাপ্টা হয়ে না যায় */
+    border: 2px solid #55efc4; /* ছবির চারপাশে একটি হালকা বর্ডার (ঐচ্ছিক) */
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #55efc4; /* আপনার সাইটের সবুজ রঙের সাথে মিলিয়ে রাখতে পারেন */
+}
 
