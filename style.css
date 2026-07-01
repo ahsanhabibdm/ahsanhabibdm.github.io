@@ -267,3 +267,63 @@ height:35px;
     font-size:18px;
     font-weight:600;
 }
+/* Contact Section */
+
+.contact-box{
+    max-width:600px;
+    margin:40px auto;
+    background:#181818;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid #333;
+    box-shadow:0 0 20px rgba(127,252,0,.2);
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.contact-item span{
+    font-size:35px;
+}
+
+.contact-item h3{
+    margin:0;
+    color:#7CFC00;
+}
+
+.contact-item a{
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.contact-item a:hover{
+    color:#7CFC00;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.social-links a{
+    background:#7CFC00;
+    color:#111;
+    text-decoration:none;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#fff;
+    transform:scale(1.05);
+}
