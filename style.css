@@ -466,4 +466,38 @@ height:35px;
     font-weight: bold;
     color: #55efc4;
 }
+/* হেডার বা মেনুবার মোবাইলে সোজা রাখার কোড */
+header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 4% !important;
+    flex-wrap: nowrap !important; /* লেখা যেন নিচে ভেঙে না যায় */
+}
+
+/* মোবাইল ডিভাইসের জন্য বিশেষ স্টাইল (Responsive) */
+@media (max-width: 600px) {
+    header {
+        padding: 8px 3% !important;
+    }
+    
+    .logo-text {
+        font-size: 16px !important; /* মোবাইলে নাম একটু ছোট হবে */
+    }
+    
+    .nav-profile-img {
+        width: 32px !important; /* মোবাইলে ছবি একটু ছোট হবে */
+        height: 32px !important;
+    }
+    
+    nav {
+        display: flex !important;
+        gap: 8px !important; /* মেনুর লিংকগুলোর মাঝের দূরত্ব */
+    }
+    
+    nav a {
+        font-size: 12px !important; /* হোম, অ্যাবাউট লেখাগুলো একটু ছোট হবে */
+        padding: 4px 6px !important;
+    }
+}
 
