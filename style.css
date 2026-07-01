@@ -530,3 +530,14 @@ header {
         max-width: 100% !important;
     }
 }
+/* পুরো ওয়েবসাইটের জন্য প্রফেশনাল ফন্ট সেট করা */
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* আপনার সাইটের শিরোনাম বা হেডলাইনগুলোর ফন্ট সুন্দর করার জন্য */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700; 
+    letter-spacing: -0.02em; 
+}
