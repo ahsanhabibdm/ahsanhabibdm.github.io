@@ -364,3 +364,66 @@ height:35px;
 .contact-card a:hover{
     text-decoration:underline;
 }
+/* Pricing Section Styles */
+#pricing {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* আপনার সাইটের ব্যাকগ্রাউন্ডের সাথে মিলিয়ে পরিবর্তন করতে পারেন */
+}
+
+.pricing-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #007bff;
+    background-color: transparent;
+    color: #007bff;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-content {
+    display: none;
+    max-width: 600px; /* ইমেজ পিসিতে অতিরিক্ত বড় যেন না হয় */
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tab-content.active-content {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.pricing-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Animation for smooth transition */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
