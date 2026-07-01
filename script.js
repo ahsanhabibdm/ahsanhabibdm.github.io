@@ -27,3 +27,35 @@ function openPricing(evt, platformId) {
     document.getElementById(platformId).classList.add("active-content");
     evt.currentTarget.classList.add("active");
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    function showSection(targetId) {
+        sections.forEach(sec => {
+            sec.style.display = 'none';
+        });
+
+        const activeSection = document.getElementById(targetId);
+        if (activeSection) {
+            activeSection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const id = this.getAttribute('href').replace('#', '');
+            showSection(id);
+            history.pushState(null, null, '#' + id);
+        });
+    });
+
+    const currentHash = window.location.hash.replace('#', '');
+    if (currentHash) {
+        showSection(currentHash);
+    } else {
+        showSection('home');
+    }
+});
