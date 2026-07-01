@@ -36,11 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
             sec.style.display = 'none';
         });
 
-        const activeSection = document.getElementById(targetId);
-        if (activeSection) {
-            activeSection.style.display = 'block';
-            window.scrollTo(0, 0);
+        // যদি কেউ Services পেজে ক্লিক করে, তবে সার্ভিস এবং প্রাইসিং দুটোই দেখাবে
+        if (targetId === 'services') {
+            const servicesSection = document.getElementById('services');
+            // আপনার প্রাইসিং সেকশনের আইডি যদি 'pricing' হয়ে থাকে
+            const pricingSection = document.getElementById('pricing') || document.querySelector('.pricing') || document.querySelector('[id*="pricing"]');
+            
+            if (servicesSection) servicesSection.style.display = 'block';
+            if (pricingSection) pricingSection.style.display = 'block';
+        } else {
+            // বাকি পেজগুলোর জন্য নরমাল নিয়ম
+            const activeSection = document.getElementById(targetId);
+            if (activeSection) {
+                activeSection.style.display = 'block';
+            }
         }
+        window.scrollTo(0, 0); // পেজ একদম উপর থেকে শুরু হবে
     }
 
     navLinks.forEach(link => {
