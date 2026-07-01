@@ -500,3 +500,30 @@ header {
         padding: 4px 6px !important;
     }
 }
+/* মোবাইলে প্রথম সেকশনের লেখা ও ব্যানার মাঝে আনার কোড */
+@media (max-width: 768px) {
+    .hero {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        justify-content: center !important;
+        padding: 40px 20px !important;
+    }
+
+    .hero-text {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .hero .btn {
+        margin: 15px auto !important; /* বাটন মাঝে আনার জন্য */
+    }
+
+    .hero-image img, .hero img {
+        margin: 20px auto !important; /* ব্যানার মাঝে আনার জন্য */
+        max-width: 100% !important;
+    }
+}
