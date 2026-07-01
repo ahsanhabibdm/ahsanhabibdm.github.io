@@ -500,23 +500,3 @@ header {
         padding: 4px 6px !important;
     }
 }
-/* প্রথমে হোম বাদে বাকি সব সেকশন লুকিয়ে রাখার জন্য */
-section {
-    display: none !important;
-}
-
-/* শুধুমাত্র হোম সেকশনটি সবসময় খোলা থাকবে */
-#home {
-    display: block !important;
-}
-
-/* যখন কোনো সেকশনকে টার্গেট (ক্লিক) করা হবে, তখন সেটি ভেসে উঠবে */
-section:target {
-    display: block !important;
-}
-
-/* যখন অন্য সেকশন ওপেন হবে, তখন হোম সেকশনটি লুকিয়ে যাবে */
-body:has(section:target:not(#home)) #home {
-    display: none !important;
-}
-
